@@ -2,3 +2,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.dino {
+  width: 60px;
+  height: 60px;
+
+  background-image: url(./assets/dino.png);
+
+  bottom: 0;
+  position: absolute;
+}
