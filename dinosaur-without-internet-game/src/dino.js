@@ -13,10 +13,10 @@ function jump() {
   dinoIsJumping = true;
 
   let positionY = 0;
-  const animationTimeMs = 19;
+  const animationTimeMs = 25;
 
   let upInterval = setInterval(() => {
-    if (positionY >= 150) {
+    if (positionY >= 170) {
       clearInterval(upInterval);
 
       let downInterval = setInterval(() => {

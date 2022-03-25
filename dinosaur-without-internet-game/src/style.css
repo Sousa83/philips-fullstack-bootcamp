@@ -1,6 +1,18 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: monospace;
+}
+
+.game-over {
+  width: 50vw;
+  height: 90vh;
+
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dino,
