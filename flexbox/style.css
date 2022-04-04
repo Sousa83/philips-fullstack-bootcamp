@@ -91,3 +91,28 @@ body > * {
     
   ;
 }
+
+.flex-container-4 {
+  display: flex;
+  max-width: 300px;
+  border: 2px solid #222;
+}
+
+.flex-container-4 div {
+  background: blueviolet;
+  margin: 5px;
+  color: #fff;
+  text-align: center;
+  flex: 1;
+}
+
+.align {
+  /* prettier-ignore */
+  align-items: 
+    /* center */
+    /* stretch */
+    /* flex-start */
+    /* flex-end */
+    baseline
+  ;
+}
