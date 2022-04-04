@@ -1,3 +1,7 @@
+body > * {
+  margin-top: 10px;
+}
+
 .flex {
   padding: 10px;
   display: flex;
@@ -34,4 +38,28 @@
   line-height: 50px;
   color: #fff;
   text-align: center;
+}
+
+.flex-container-2 {
+  display: flex;
+  height: 150px;
+  max-width: 300px;
+  border: 2px solid #222;
+}
+
+.flex-container-2 div {
+  height: 50%;
+  width: 100px;
+  min-width: 100px;
+  font-style: 24px;
+  text-align: center;
+  background: orange;
+}
+
+.wrap {
+  /* prettier-ignore */
+  flex-wrap: 
+    /* wrap */
+    wrap-reverse
+  ;
 }
