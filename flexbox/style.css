@@ -63,3 +63,31 @@ body > * {
     wrap-reverse
   ;
 }
+
+.flex-container-3 {
+  display: flex;
+  height: 100px;
+  border: 2px solid #222;
+}
+
+.flex-container-3 div {
+  height: 50%;
+  width: 100px;
+  min-width: 100px;
+  font-style: 24px;
+  text-align: center;
+  background: violet;
+}
+
+.justify {
+  /* prettier-ignore */
+  justify-content: 
+    /* flex-start */
+    /* center */
+    /* flex-end */
+    /* space-around */
+    /* space-between */
+    space-evenly
+    
+  ;
+}
