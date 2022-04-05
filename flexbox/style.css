@@ -150,7 +150,8 @@ body > * {
 
 .flex-container-6,
 .flex-container-7,
-.flex-container-8 {
+.flex-container-8,
+.flex-container-9 {
   display: flex;
   max-width: 300px;
   border: 1px solid #222;
@@ -213,4 +214,12 @@ body > * {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 100px;
+}
+
+.flex-container-9 > div {
+  margin: 5px;
+  padding: 10px;
+  flex-basis: 100px;
+  text-align: center;
+  background-color: yellowgreen;
 }
