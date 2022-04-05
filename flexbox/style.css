@@ -149,7 +149,8 @@ body > * {
 }
 
 .flex-container-6,
-.flex-container-7 {
+.flex-container-7,
+.flex-container-8 {
   display: flex;
   max-width: 300px;
   border: 1px solid #222;
@@ -195,4 +196,21 @@ body > * {
   flex-basis: 100px;
   flex-grow: 1;
   box-sizing: content-box;
+}
+
+.flex-container-8 > div {
+  margin: 5px;
+  font-style: 24px;
+  text-align: center;
+  background-color: aqua;
+
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+
+  /* flex-grow: 1;
+  flex-shrink: 2; */
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
 }
