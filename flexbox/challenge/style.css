@@ -4,6 +4,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+header {
+  width: 100%;
+}
+
 div img {
   width: 100%;
   display: block;
@@ -22,7 +26,9 @@ ul li a {
 
   width: 100%;
   display: flex;
+  padding: 10px;
   max-width: 992px;
+  min-width: 320px;
 }
 
 header {
@@ -220,4 +226,57 @@ header .menu {
   height: 10px;
   margin-right: 5px;
   background-color: #122a57;
+}
+
+footer {
+  background: #122a57;
+}
+
+footer .flex-container {
+  color: #fff;
+  padding: 25px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .plans-list,
+  .service-list,
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .about-us,
+  .flex-tourism {
+    flex-direction: column-reverse;
+  }
+
+  .flex-tourism .content {
+    width: 100%;
+  }
+
+  .flex-tourism img,
+  .about-us img {
+    margin: auto;
+    min-width: 320px;
+  }
+
+  .about-us p {
+    width: 80%;
+    min-width: 320px;
+  }
+
+  .flex-tourism,
+  .service-list > div img {
+    width: 50%;
+  }
+
+  .plans-list {
+    align-items: flex-start;
+  }
+  .plans-list > div {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+  }
 }
