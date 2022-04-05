@@ -151,7 +151,8 @@ body > * {
 .flex-container-6,
 .flex-container-7,
 .flex-container-8,
-.flex-container-9 {
+.flex-container-9,
+.flex-container-10 {
   display: flex;
   max-width: 300px;
   border: 1px solid #222;
@@ -222,4 +223,14 @@ body > * {
   flex-basis: 100px;
   text-align: center;
   background-color: yellowgreen;
+}
+
+.flex-container-10 {
+  align-items: center;
+}
+
+.flex-container-10 > div {
+  background: yellow;
+  margin: 15px;
+  padding: 10px;
 }
