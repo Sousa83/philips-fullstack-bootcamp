@@ -64,7 +64,7 @@ header .menu {
   margin-bottom: 10px;
 }
 
-.flex-tourism a {
+.btn {
   color: #fff;
   width: 220px;
   height: 50px;
@@ -108,4 +108,116 @@ header .menu {
 
 .about-us img {
   min-width: 420px;
+}
+
+.services {
+  width: 100%;
+  color: #fff;
+  background: #122a57;
+}
+
+.services > div.flex-container {
+  padding: 100px 0;
+  flex-direction: column;
+}
+
+.services .service-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-list > div {
+  color: #fff;
+  text-align: center;
+}
+
+.service-list > div p {
+  font-weight: 700;
+  font-style: 20px;
+  margin-bottom: 10px;
+}
+
+.service-list > div a {
+  height: 50px;
+  width: 220px;
+  padding: 0 10px;
+  color: #122a57;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.service-list > div img {
+  width: 80%;
+  margin: auto;
+}
+
+.plans {
+  padding-top: 50px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.plans h2 {
+  font-style: 32px;
+}
+
+.plans .plans-list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.plans-list > div {
+  flex: 1;
+  padding: 10px;
+  max-width: 240px;
+  margin-right: 20px;
+  border: 2px solid #122a57;
+}
+
+.plans-list h3 {
+  display: flex;
+  margin-top: 20px;
+  color: #122a57;
+  font-size: 24px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.plans-list h3::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #122a57;
+}
+
+.plans-list .btn {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.plans-list ul {
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.plans-list li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.plans-list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #122a57;
 }
