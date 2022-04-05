@@ -148,7 +148,8 @@ body > * {
     ;
 }
 
-.flex-container-6 {
+.flex-container-6,
+.flex-container-7 {
   display: flex;
   max-width: 300px;
   border: 1px solid #222;
@@ -168,4 +169,30 @@ body > * {
     /* 0 default */
     2
   ;
+}
+
+.flex-container-7 > div {
+  margin: 5px;
+  color: white;
+  text-align: center;
+  background: chartreuse;
+}
+
+/* Propriedade que define o fator base para o cálculo de crescimento
+* Do flex-grow
+*/
+.basis-auto {
+  flex-basis: auto;
+  flex-grow: 2;
+}
+
+.basis-0 {
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+.basis-100 {
+  flex-basis: 100px;
+  flex-grow: 1;
+  box-sizing: content-box;
 }
