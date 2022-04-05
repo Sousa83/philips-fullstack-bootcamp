@@ -147,3 +147,25 @@ body > * {
         space-between
     ;
 }
+
+.flex-container-6 {
+  display: flex;
+  max-width: 300px;
+  border: 1px solid #222;
+}
+
+.flex-container-6 > div {
+  margin: 5px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: brown;
+}
+
+.flex-grow {
+  /* prettier-ignore */
+  flex-grow: 
+    /* 0 default */
+    2
+  ;
+}
