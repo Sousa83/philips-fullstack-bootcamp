@@ -1,5 +1,12 @@
 <h2 class="fs-4">course list</h2>
 
+<div class="form-group row">
+  <label class="col-sm-2 col-form-label">Course name:</label>
+  <div class="col-10">
+    <input [(ngModel)]="filter" type="text" class="form-control" />
+  </div>
+</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -14,7 +21,7 @@
   </thead>
   <tbody>
     <!-- for  -->
-    <tr *ngFor="let course of courses">
+    <tr *ngFor="let course of filteredCourses">
       <td>
         <!-- data bing em atributos é feita com o encapsulamento do atributo por "[]"  -->
         <img [src]="course.imageUrl" alt="" width="40" />
