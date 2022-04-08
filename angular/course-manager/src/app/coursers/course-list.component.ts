@@ -4,7 +4,7 @@ import { CourseService } from '../services/course.service';
 
 @Component({
   // todos os componentes são prefixados com o nome da app por padrão
-  selector: 'app-course-list',
+  // Uma vez que tenho atrelado uma rota para um componente, o uso do "selector" não é mais necessário
   templateUrl: './course-list.component.html',
 })
 export class CourseListComponent implements OnInit {
