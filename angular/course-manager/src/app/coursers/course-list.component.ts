@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../models/Course';
+import { CourseService } from '../services/course.service';
 
 @Component({
   // todos os componentes são prefixados com o nome da app por padrão
@@ -9,35 +10,11 @@ import { Course } from '../models/Course';
 export class CourseListComponent implements OnInit {
   courses: Course[] = [];
 
+  // A injeção de dependências em componentes da-se pelos construtores
+  constructor(private courseService: CourseService) {}
+
   // A implementação de métodos de ciclo de vida da-se a implementação de interfaces
   ngOnInit(): void {
-    // assets já é acessível pelo angular.json
-    this.courses.push(
-      new Course(
-        1,
-        'Angular 8 - introduction',
-        'SS-1',
-        19.9,
-        4.5,
-        'assets/images/forms.png',
-        5,
-        '2019-11-01',
-        ''
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        2,
-        'Angular 8 - components managament',
-        'SS-2',
-        19.9,
-        5,
-        'assets/images/http.png',
-        5,
-        '2019-11-01',
-        ''
-      )
-    );
+    this.courses = this.courseService.retriveAll();
   }
 }
