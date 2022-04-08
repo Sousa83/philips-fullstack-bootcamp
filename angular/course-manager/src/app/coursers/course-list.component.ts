@@ -32,7 +32,7 @@ export class CourseListComponent implements OnInit {
         'Angular 8 - components managament',
         'SS-2',
         19.9,
-        4.5,
+        5,
         'assets/images/http.png',
         5,
         '2019-11-01',
