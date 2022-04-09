@@ -33,7 +33,12 @@
       <td>
         <app-star [rating]="course.rating"></app-star>
       </td>
-      <td></td>
+      <td>
+        <!-- criando um link para outro componente, usando parâmetros -->
+        <a [routerLink]="['/course', course.id]" class="btn btn-primary"
+          >edit</a
+        >
+      </td>
     </tr>
   </tbody>
 </table>

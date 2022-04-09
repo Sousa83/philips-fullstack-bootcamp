@@ -10,6 +10,7 @@ import { NotFoundComponent } from './notFound/not-found.component';
 import { CourseListComponent } from './coursers/course-list.component';
 
 import { ReplacePipe } from './pipes/replace.pipe';
+import { CourseDetailComponent } from './coursers/course-detail.component';
 
 @NgModule({
   // declarations é por onde importamos componentes, pipes, etc num módulo
@@ -19,6 +20,7 @@ import { ReplacePipe } from './pipes/replace.pipe';
     StarComponent,
     HeaderComponent,
     CourseListComponent,
+    CourseDetailComponent,
   ],
   imports: [
     FormsModule,
@@ -30,6 +32,7 @@ import { ReplacePipe } from './pipes/replace.pipe';
         redirectTo: 'courses',
         pathMatch: 'full',
       },
+      { path: 'course/:id', component: CourseDetailComponent },
       { path: 'courses', component: CourseListComponent },
       { path: '**', component: NotFoundComponent },
     ]),
