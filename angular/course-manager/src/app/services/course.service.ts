@@ -10,6 +10,18 @@ export class CourseService {
   retriveAll(): Array<Course> {
     return courses;
   }
+
+  retriveById(id: number): Course | undefined {
+    return courses.find((c) => c.id === id);
+  }
+
+  save(course: Course): void {
+    if (course.id) {
+      const index = courses.findIndex((c) => c.id === course.id);
+
+      courses[index] = course;
+    }
+  }
 }
 
 const courses: Array<Course> = [
