@@ -6,13 +6,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CourseModule } from './coursers/course.module';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { CoreModule } from './core/core.module';
 import { NotFoundComponent } from './notFound/not-found.component';
 
 @NgModule({
   // declarations é por onde importamos componentes, pipes, etc num módulo
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent],
   imports: [
+    CoreModule,
     CourseModule,
     BrowserModule,
     HttpClientModule,
