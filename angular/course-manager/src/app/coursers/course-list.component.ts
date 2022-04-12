@@ -18,6 +18,10 @@ export class CourseListComponent implements OnInit {
 
   // A implementação de métodos de ciclo de vida da-se a implementação de interfaces
   ngOnInit(): void {
+    this.retriveAll();
+  }
+
+  retriveAll(): void {
     // As incrições nos métodos do angular http móule recebem callbacks para executarem
     this.courseService.retriveAll().subscribe({
       next: (courses) => {
@@ -27,6 +31,16 @@ export class CourseListComponent implements OnInit {
       error: (err) => {
         console.error(err);
       },
+    });
+  }
+
+  deleteById(id: number): void {
+    this.courseService.delete(id).subscribe({
+      next: () => {
+        console.log('Deleted');
+        this.retriveAll();
+      },
+      error: () => console.log('Error on delete'),
     });
   }
 
