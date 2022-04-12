@@ -5,7 +5,8 @@
 <!-- " #abc='ng...'" é variável de "template",
   usada para controlar o formulário -->
 
-<form #courseForm="ngForm">
+<!-- "*ngIf=''" é requerido porque na inicialização do componente, o curso pode não ser carregado -->
+<form #courseForm="ngForm" *ngIf="course">
   <div class="form-group mt-1 row">
     <label class="col-1 col-form-label">name</label>
     <div class="col-11">

@@ -18,8 +18,16 @@ export class CourseListComponent implements OnInit {
 
   // A implementação de métodos de ciclo de vida da-se a implementação de interfaces
   ngOnInit(): void {
-    this.courses = this.courseService.retriveAll();
-    this.filteredCourses = this.courses;
+    // As incrições nos métodos do angular http móule recebem callbacks para executarem
+    this.courseService.retriveAll().subscribe({
+      next: (courses) => {
+        this.courses = courses;
+        this.filteredCourses = this.courses;
+      },
+      error: (err) => {
+        console.error(err);
+      },
+    });
   }
 
   public set filter(value: string) {
