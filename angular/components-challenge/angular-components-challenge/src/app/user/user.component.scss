@@ -1,0 +1,54 @@
+table {
+  th.select,
+  td.select,
+  input[type="checbox"] {
+    width: 1px;
+  }
+
+  th.actions,
+  td.actions {
+    width: 35px;
+  }
+
+  td.actions {
+    min-height: 90px;
+  }
+}
+
+.user-details {
+  display: flex;
+
+  .user-thumbnail-container {
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  div {
+    display: none;
+    padding: 0 15px;
+
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    h3,
+    h4,
+    span {
+      font-size: 0.85rem;
+    }
+
+    h2,
+    h4 {
+      color: #0066ff;
+    }
+  }
+}
