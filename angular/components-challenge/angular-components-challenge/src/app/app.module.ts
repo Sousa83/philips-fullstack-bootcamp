@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { UserModule } from './user/user.module';
+import { UserModule } from './users/user.module';
 
 @NgModule({
   bootstrap: [AppComponent],
