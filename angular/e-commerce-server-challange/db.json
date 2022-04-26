@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "The Witcher - A torre da andorinha",
+      "price": 29.9,
+      "quantity": 40,
+      "category": "adventure",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91mzAWlPXvL.jpg"
+    }
+  ]
+}
