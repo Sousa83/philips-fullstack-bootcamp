@@ -1,1 +1,19 @@
-<p>product works!</p>
+<div class="card shadow-sm">
+  <img
+    [src]="product.img"
+    alt="product image"
+    class="bd-placeholder-img card-img-top"
+  />
+
+  <div class="card-body">
+    <p class="card-text">{{ product.name }}</p>
+    <p class="card-text">{{ product.category }}</p>
+    <p class="card-text">{{ product.quantity }}</p>
+    <p class="card-text">{{ product.price | currency: "BRL" }}</p>
+  </div>
+
+  <div class="btn-group">
+    <button class="btn btn-sm btn-primary">Comprar</button>
+    <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+  </div>
+</div>
