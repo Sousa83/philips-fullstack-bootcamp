@@ -7,6 +7,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { NavComponent } from './shared/components/nav/nav.component';
 import { BookstoreComponent } from './bookstore/bookstore.component';
 import { FilterComponent } from './bookstore/filter/filter.component';
+import { ProductComponent } from './bookstore/product-list/product/product.component';
+import { ProductListComponent } from './bookstore/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,12 @@ import { FilterComponent } from './bookstore/filter/filter.component';
     FooterComponent,
     NavComponent,
     BookstoreComponent,
-    FilterComponent
+    FilterComponent,
+    ProductComponent,
+    ProductListComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
