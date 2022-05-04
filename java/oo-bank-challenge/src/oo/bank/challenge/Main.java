@@ -17,15 +17,12 @@ public class Main {
 
         System.out.println(digiBank.getName());
 
-        savingAccount.getAccountData();
-        checkingAccount.getAccountData();
-
         checkingAccount.deposit(109.10);
         savingAccount.deposit(10000.00);
         checkingAccount.transfer(10, savingAccount);
 
-        savingAccount.getAccountData();
-        checkingAccount.getAccountData();
+        savingAccount.getExtract();
+        checkingAccount.getExtract();
 
 
     }

@@ -9,6 +9,8 @@ public interface IAccount {
 
     void transfer(double value, Account account);
 
+    void getExtract();
+
     void getAccountData();
 }
 
